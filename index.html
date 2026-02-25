@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New Message</title>
+<title>Новое сообщение</title>
 
 <style>
 body{
@@ -19,6 +19,13 @@ body{
     max-width:420px;
     width:100%;
     padding:20px;
+}
+
+.topnotice{
+    text-align:center;
+    font-size:14px;
+    color:#ffcf4a;
+    margin-bottom:12px;
 }
 
 .profile{
@@ -50,6 +57,7 @@ body{
     border-radius:12px;
     display:inline-block;
     max-width:80%;
+    line-height:1.4;
 }
 
 .typing{
@@ -87,6 +95,13 @@ button{
     font-weight:bold;
     cursor:pointer;
 }
+
+.lock{
+    text-align:center;
+    margin-top:12px;
+    font-size:13px;
+    color:#aaa;
+}
 </style>
 </head>
 
@@ -94,14 +109,18 @@ button{
 
 <div class="container">
 
+<div class="topnotice">
+У вас 1 непрочитанное сообщение
+</div>
+
 <div class="profile">
 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330">
-<div class="online">● Online now</div>
+<div class="online">● Сейчас онлайн</div>
 </div>
 
 <div class="chat">
 <div class="message">
-Hey… I saw your profile 👀
+Привет 🙂 Я кажется нашла тебя рядом...
 </div>
 
 <div class="typing">
@@ -111,7 +130,11 @@ Hey… I saw your profile 👀
 </div>
 </div>
 
-<button onclick="goOffer()">Continue chatting</button>
+<button onclick="goOffer()">Продолжить переписку</button>
+
+<div class="lock">
+Доступ откроется после подтверждения профиля
+</div>
 
 </div>
 
